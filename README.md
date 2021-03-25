@@ -1,17 +1,19 @@
 # SLP
     ;13
+    ```Lisp
     (defun LIST_TO_SET (L)
     (cond
     ((null L) nil)
     ((member (car L) (cdr L)) (LIST_TO_SET (cdr L)))
     (T (cons (car L) (LIST_TO_SET (cdr L))))))
 
-  
+    ```
 
 
 
 
     ;9 
+    ```Lisp
     (defun len (w n)
     (cond
     ((null w) n)
@@ -43,10 +45,11 @@
     (print (split '(1 2 3 4 5) () ()))
     (print (split () () ()))
 
-
+    ```
 
 
     ;20
+    ```Lisp
     (defun f (x)
     (cond ((Atom (car x)) (car x))
     (t(f (car x)))))
@@ -66,3 +69,4 @@
 
      (print (вычисли '((2 * 3) + (3 * 6))))
 
+```
