@@ -26,23 +26,23 @@
 Эта функция вдохновила аналогичную работу в компиляторе GHC Haskell.
 
   Вот минимальная программа "Hello world" на языке PureScript:
-    ```PureScript
-    модуль Main where
+  ```PureScript
+  модуль Main where
 
-    import Effect.Console (log)
+  import Effect.Console (log)
 
-    main = log "Hello World!"
-    ```
+  main = log "Hello World!"
+  ```
   Здесь тип программы выводится и проверяется компилятором PureScript. Более подробная версия той же программы может включать явные аннотации типов:
-    ```PureScript
-    модуль Main , где
+  ```PureScript
+  модуль Main , где
 
-    import Prelude
+  import Prelude
 
-    import Effect (Эффект)
-    import Effect.Console (log)
+  import Effect (Эффект)
+  import Effect.Console (log)
 
 
-    main :: Effect Unit
-    main = log "Hello World!"
-    ```
+  main :: Effect Unit
+  main = log "Hello World!"
+  ```
